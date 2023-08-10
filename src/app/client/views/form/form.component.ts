@@ -3,9 +3,9 @@ import Client from '../../entities/Client';
 
 @Component({
   selector: 'app-client-form',
-  templateUrl: './client-form.component.html',
-  styleUrls: ['./client-form.component.css']
+  templateUrl: './form.component.html',
+  styleUrls: ['./form.component.css']
 })
-export class ClientFormComponent {
+export class FormComponent {
     @Input() client : Client|null  = null;
 }
