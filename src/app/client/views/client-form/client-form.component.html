@@ -1,0 +1,78 @@
+<div class="row">
+    <h4>Informações de Cliente</h4>
+    <div class="col-6">
+        <label for="name-input" class="form-label">Nome</label>
+        <input type="text" class="form-control" name="name" id="name-input" [value]="client?.name">
+    </div>
+
+    <div class="col-6">
+        <label for="email-input" class="form-label">Email</label>
+        <input type="email" class="form-control" name="email" id="email-input" [value]="client?.email">
+    </div>
+
+    <div class="col-6">
+        <label for="password-input" class="form-label">Senha</label>
+        <input type="password" class="form-control" name="password" id="password-input">
+    </div>
+
+    <div class="col-6">
+        <label for="confirm-password-input" class="form-label">Confirme a senha</label>
+        <input type="password" class="form-control" name="confirm-password" id="confirm-password-input">
+    </div>
+
+    <div class="col-4">
+        <label for="cpf-input" class="form-label">CPF</label>
+        <input type="text" class="form-control" id="cpf-input" disabled [value]="client?.cpf">
+    </div>
+
+    <div class="col-4">
+        <label for="phone-input" class="form-label">Telefone</label>
+        <input type="text" class="form-control" name="phone" id="phone-input" [value]="client?.phone">
+    </div>
+
+    <div class="col-4">
+        <label for="salary-input" class="form-label">Salário</label>
+        <input type="number" step="0.01" class="form-control" name="salary" id="salary-input" [value]="client?.salary">
+    </div>
+</div>
+
+<hr>
+<div class="row">
+    <h4>Endereço</h4>
+
+    <!-- TODO Trocar para select (confirmar antes com professor) -->
+    <div class="col-3">
+        <label for="address-type-input" class="form-label">Tipo de Endereço</label>
+        <input type="text" class="form-control" name="address-type" id="address-type-input" [value]="client?.address?.type">
+    </div>
+
+    <div class="col-9">
+        <label for="address-address-input" class="form-label">Endereço</label>
+        <input type="text" class="form-control" name="address-address" id="address-address-input" [value]="client?.address?.address">
+    </div>
+
+    <div class="col-3">
+        <label for="address-number-input" class="form-label">Número</label>
+        <input type="text" class="form-control" name="address-number" id="address-number-input" [value]="client?.address?.number">
+    </div>
+
+    <div class="col-5">
+        <label for="address-complement-input" class="form-label">Complement</label>
+        <input type="text" class="form-control" name="address-complement" id="address-complement-input" [value]="client?.address?.complement">
+    </div>
+
+    <div class="col-4">
+        <label for="address-zipcode-input" class="form-label">CEP</label>
+        <input type="text" class="form-control" name="address-zipcode" id="address-zipcode-input" [value]="client?.address?.zipCode">
+    </div> 
+
+    <div class="col-6">
+        <label for="address-city-input" class="form-label">Cidade</label>
+        <input type="text" class="form-control" name="address-city" id="address-city-input" [value]="client?.address?.city">
+    </div>
+
+    <div class="col-6">
+        <label for="address-state-input" class="form-label">Estado</label>
+        <input type="text" class="form-control" name="address-state" id="address-state-input" [value]="client?.address?.state">
+    </div>
+</div>
