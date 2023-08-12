@@ -5,12 +5,14 @@ import { ProfileComponent } from './views/profile/profile.component';
 import { FormComponent } from './views/form/form.component';
 import { MenuComponent } from './views/menu/menu.component';
 import { ClientRoutingModule } from './client-routing.module';
+import { LoginComponent } from './views/login/login.component';
 
 @NgModule({
   declarations: [
     RegisterComponent,
     ProfileComponent,
     FormComponent,
+    LoginComponent,
   ],
   imports: [
     CommonModule,

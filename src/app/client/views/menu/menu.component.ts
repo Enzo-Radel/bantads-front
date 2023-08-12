@@ -21,8 +21,6 @@ export class MenuComponent {
         formData.append("withdraw_value", valueInput.value);
 
         console.log("valor: " + formData.get("withdraw_value"));
-
-        // TODO Recuperar "action" da variável form e fazer requisição async
     }
 
     deposit() {
@@ -34,8 +32,6 @@ export class MenuComponent {
         formData.append("deposit_value", valueInput.value);
 
         console.log("valor: " + formData.get("deposit_value"));
-
-        // TODO Recuperar "action" da variável form e fazer requisição async
     }
 
     transference() {
@@ -50,7 +46,5 @@ export class MenuComponent {
 
         console.log("conta: " + formData.get("transference_account"));
         console.log("valor: " + formData.get("transference_value"));
-
-        // TODO Recuperar "action" da variável form e fazer requisição async
     }
 }
