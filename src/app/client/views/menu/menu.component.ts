@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import Client from '../../entities/Client';
+import Account from '../../entities/Account';
 
 @Component({
     selector: 'app-menu',
@@ -7,5 +8,5 @@ import Client from '../../entities/Client';
     styleUrls: ['./menu.component.css']
 })
 export class MenuComponent {
-    client = Client.findClient(1);
+    account = Account.findAccount(1);
 }
