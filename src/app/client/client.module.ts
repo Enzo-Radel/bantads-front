@@ -11,11 +11,11 @@ import { ClientRoutingModule } from './client-routing.module';
     RegisterComponent,
     ProfileComponent,
     FormComponent,
-    MenuComponent,
   ],
   imports: [
     CommonModule,
-    ClientRoutingModule
+    ClientRoutingModule,
+    MenuComponent,
   ]
 })
 export class ClientModule { }
