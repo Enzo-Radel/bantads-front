@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
     styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
+    // TODO Achar uma forma de informar que o usuário não está logado para esconder o header
     submitLoginForm() {
         let form = document.getElementById("loginForm")!;
         let emailInput = document.getElementById("emailInput")! as HTMLInputElement;
