@@ -1,0 +1,20 @@
+<div class="d-flex justify-content-center">
+    <div class="card w-50">
+        <div class="card-header">
+            <h3>Login</h3>
+        </div>
+        <div class="card-body">
+            <form action="#" method="post" id="loginForm">
+                <label for="emailInput" class="form-label">Email</label>
+                <input type="email" class="form-control" id="emailInput">
+                <label for="passwordInput" class="form-label">Senha</label>
+                <input type="password" class="form-control" id="passwordInput">
+            </form>
+        </div>
+        <div class="card-footer d-flex flex-column align-items-center">
+            <button class="btn btn-outline-primary w-50" (click)="submitLoginForm()">Login</button>
+            <br>
+            <p>Não possui um cadastro? Cadastre-se clicando <a routerLink="/client/register">aqui</a></p>
+        </div>
+    </div>
+</div>

@@ -22,7 +22,8 @@
 
     <div class="col-4">
         <label for="cpf-input" class="form-label">CPF</label>
-        <input type="text" class="form-control" id="cpf-input" disabled [value]="client?.cpf">
+        <input *ngIf="client != null" type="text" class="form-control" id="cpf-input" disabled [value]="client.cpf">
+        <input *ngIf="client == null" type="text" class="form-control" id="cpf-input">
     </div>
 
     <div class="col-4">
@@ -40,7 +41,7 @@
 <div class="row">
     <h4>Endereço</h4>
 
-    <!-- TODO Trocar para select (confirmar antes com professor) -->
+    <!-- TODO Configurar comunicação com api do viacep para recuperar endereço através do CEP -->
     <div class="col-3">
         <label for="address-type-input" class="form-label">Tipo de Endereço</label>
         <input type="text" class="form-control" name="address-type" id="address-type-input" [value]="client?.address?.type">

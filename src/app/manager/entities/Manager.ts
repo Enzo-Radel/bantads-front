@@ -1,18 +1,19 @@
 import Person from "src/app/entities/Person";
 
-export default class Manager
+export default class Manager extends Person
 {
-    person: Person;
     cpf: string;
     phone: string;
 
     constructor(
-        person: Person,
+        name: string,
+        email: string,
+        password: string,
         cpf: string,
         phone: string,
     )
     {
-        this.person = person;
+        super(name, email, password);
         this.cpf = cpf;
         this.phone = phone;
     }
