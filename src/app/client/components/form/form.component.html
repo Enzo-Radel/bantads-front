@@ -22,7 +22,8 @@
 
     <div class="col-4">
         <label for="cpf-input" class="form-label">CPF</label>
-        <input type="text" class="form-control" id="cpf-input" disabled [value]="client?.cpf">
+        <input *ngIf="client != null" type="text" class="form-control" id="cpf-input" disabled [value]="client.cpf">
+        <input *ngIf="client == null" type="text" class="form-control" id="cpf-input">
     </div>
 
     <div class="col-4">
