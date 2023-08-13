@@ -1,15 +1,16 @@
 import { Component } from '@angular/core';
 import Account from '../../entities/Account';
 import { ModalComponent } from 'src/app/components/modal/modal.component';
+import { RouterLink } from '@angular/router';
 
 @Component({
     selector: 'app-menu',
     templateUrl: './menu.component.html',
     styleUrls: ['./menu.component.css'],
     standalone: true,
-    imports: [ModalComponent]
+    imports: [ModalComponent, RouterLink]
 })
-export class MenuComponent {
+export class MenuComponent{
     account = Account.findAccount(1);
 
     withdraw() {

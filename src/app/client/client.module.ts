@@ -6,6 +6,7 @@ import { FormComponent } from './components/form/form.component';
 import { MenuComponent } from './views/menu/menu.component';
 import { ClientRoutingModule } from './client-routing.module';
 import { LoginComponent } from './views/login/login.component';
+import { BankStatementComponent } from './views/bank-statement/bank-statement.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { LoginComponent } from './views/login/login.component';
     ProfileComponent,
     FormComponent,
     LoginComponent,
+    BankStatementComponent,
   ],
   imports: [
     CommonModule,

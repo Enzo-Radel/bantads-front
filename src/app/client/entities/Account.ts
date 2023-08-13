@@ -63,7 +63,7 @@ export default class Account
             2000,
             manager,
             5000,
-            new Date()
+            new Date("08-01-2023")
         );
 
         return account;
