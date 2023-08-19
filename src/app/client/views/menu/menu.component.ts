@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import Account from '../../entities/Account';
+import Account from 'src/app/entities/Account';
 import { ModalComponent } from 'src/app/components/modal/modal.component';
 import { RouterLink } from '@angular/router';
 

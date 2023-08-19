@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import Client from '../../entities/Client';
+import Client from 'src/app/entities/Client';
 
 @Component({
   selector: 'app-client-form',

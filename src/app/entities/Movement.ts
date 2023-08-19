@@ -1,4 +1,4 @@
-import Account from "./Account";
+import Account from "src/app/entities/Account";
 
 export enum MovementTypes {
     deposit = "Depósito",

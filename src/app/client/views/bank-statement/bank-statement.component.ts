@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import Movement from '../../entities/Movement';
-import {MovementTypes} from '../../entities/Movement';
-import Account from '../../entities/Account';
+import Movement from 'src/app/entities/Movement';
+import {MovementTypes} from 'src/app/entities/Movement';
+import Account from 'src/app/entities/Account';
 
 @Component({
     selector: 'app-bank-statement',

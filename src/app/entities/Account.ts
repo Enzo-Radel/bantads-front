@@ -1,6 +1,6 @@
-import Manager from "src/app/manager/entities/Manager";
-import Client from "./Client";
-import Address from "./Address";
+import Manager from "src/app/entities/Manager";
+import Client from "src/app/entities/Client";
+import Address from "src/app/entities/Address";
 
 export default class Account
 {
