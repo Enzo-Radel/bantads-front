@@ -19,6 +19,9 @@ FrontEnd do projeto final da disciplina de "Desenvolvimento de Aplicações Corp
 
 #### layout
     Parecida com a pasta components, porém aqui estarão os principais components do layout do sistema, serão usados em praticamente todas as telas.
+#### services
+    Farão a conexão com o backend (enquanto não tiver backend, usarão local storage)
+    Obs: Precisam ser importados no módulo na parte de providers
 
 #### views
     Também são componentes, porém representam as telas do projeto, duas views não devem ser chamadas ao mesmo tempo, e uma view não deve chamar outra dentro dela.
