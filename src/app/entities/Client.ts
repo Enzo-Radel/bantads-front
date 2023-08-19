@@ -1,5 +1,5 @@
-import Person from "../../entities/Person";
-import Address from "./Address";
+import Person from "src/app/entities/Person";
+import Address from "src/app/entities/Address";
 
 export default class Client extends Person
 {

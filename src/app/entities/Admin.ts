@@ -1,4 +1,4 @@
-import Person from "../../entities/Person";
+import Person from "src/app/entities/Person";
 
 export default class Admin
 {
