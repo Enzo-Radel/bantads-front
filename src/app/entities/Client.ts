@@ -48,4 +48,49 @@ export default class Client extends Person
 
         return client;
     }
+
+    // cria dois clientes e retorna um array com eles
+    static getAllClients(): Client[] {
+        let address = new Address(
+            Address.getAddressTypes().street,
+            "rua dos tolos",
+            100,
+            "ap 20",
+            "12345678",
+            "curitiba",
+            "parana"
+        );
+        let client = new Client(
+            "enzo",
+            "enzo@radel",
+            "1234",
+            address,
+            "12345678901",
+            "12345678",
+            5000
+        );
+        let address2 = new Address(
+            Address.getAddressTypes().street,
+            "perto do fim do mundo",
+            200,
+            "casa azul",
+            "12345678",
+            "curitiba",
+            "parana"
+        );
+        let client2 = new Client(
+            "Claudio",
+            "claudio@sla",
+            "54321",
+            address2,
+            "12345678901",
+            "12345678",
+            100000000
+        );
+        const clients: Client[] = [
+            client,
+            client2,
+        ]
+        return clients;
+    }
 }

@@ -1,0 +1,24 @@
+<h1>Aprovação de cadastro de clientes</h1>
+<table class="table table-striped table-bordered table-hover">
+    <tbody>
+        <tr>
+            <th>Nome</th>
+            <th>CPF</th>
+            <th>Salário</th>
+            <th>Aprovação</th>
+        </tr>
+        <tr *ngFor="let client of clients">
+            <td>{{client.name!}}</td>
+            <td>{{client.cpf}}</td>
+            <td>{{client.salary!}}</td>
+            <td class="text-center" style="width: 300px">
+                <a (click)="approveClient($event, client)" href="#" title="Aprovar" alt="Aprovar" class="btn btn-xs btn-info">
+                    <i class="fa fa-edit" aria-hidden="true"></i> Aprovar
+                </a>
+                <a (click)="denyClient($event, client)" href="#" title="Recusar" alt="Recusar" class="btn btn-xs btn-danger">
+                    <i class="fa fa-times" aria-hidden="true"></i> Recusar
+                </a>
+            </td>
+        </tr>
+    </tbody>
+</table>
