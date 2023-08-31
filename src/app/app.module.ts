@@ -7,6 +7,7 @@ import { HeaderComponent } from './layout/header/header.component';
 import { ClientModule } from './client/client.module';
 import { ManagerModule } from './manager/manager.module';
 import { ModalComponent } from './components/modal/modal.component';
+import { AdmModule } from './adm/adm.module';
 
 
 @NgModule({
@@ -19,6 +20,7 @@ import { ModalComponent } from './components/modal/modal.component';
     AppRoutingModule,
     ClientModule,
     ManagerModule,
+    AdmModule,
     ModalComponent
   ],
   providers: [],
