@@ -54,7 +54,10 @@ export default class Account
             "gerente@email",
             "1234",
             "12345",
-            "1111-1111"
+            "1111-1111",
+            "", // *
+            "", // *
+            ""  // *
         );
 
         let account = new Account(

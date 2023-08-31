@@ -8,6 +8,8 @@ import { ClientModule } from './client/client.module';
 import { ManagerModule } from './manager/manager.module';
 import { ModalComponent } from './components/modal/modal.component';
 import { AdminModule } from './admin/admin.module';
+import { AdmModule } from './adm/adm.module';
+
 
 @NgModule({
   declarations: [
@@ -20,6 +22,7 @@ import { AdminModule } from './admin/admin.module';
     ClientModule,
     ManagerModule,
     AdminModule,
+    AdmModule,
     ModalComponent
   ],
   providers: [],
