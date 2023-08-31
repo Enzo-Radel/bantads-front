@@ -10,7 +10,7 @@ import { ManagerRoutingModule } from './manager-routing.module';
   imports: [
     CommonModule,
     ManagerRoutingModule,
-    MenuComponent
+    MenuComponent,
   ]
 })
 export class ManagerModule { }
