@@ -7,7 +7,6 @@ import { HeaderComponent } from './layout/header/header.component';
 import { ClientModule } from './client/client.module';
 import { ManagerModule } from './manager/manager.module';
 import { ModalComponent } from './components/modal/modal.component';
-import { AdminModule } from './admin/admin.module';
 import { AdmModule } from './adm/adm.module';
 
 
@@ -21,7 +20,6 @@ import { AdmModule } from './adm/adm.module';
     AppRoutingModule,
     ClientModule,
     ManagerModule,
-    AdminModule,
     AdmModule,
     ModalComponent
   ],
