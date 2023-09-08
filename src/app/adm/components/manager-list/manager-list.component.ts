@@ -18,7 +18,7 @@ export class ManagerListComponent implements OnInit {
   }
 
   listAll(): Manager[] {
-     return this.admService.listAll();
+    return this.admService.listAll();
     // return [
     //   new Manager("Razer", "razer@email", "123", "01254256891", "996585", "600", "400", "200"),
     //   new Manager("Razer", "razer@email", "123", "01254256891", "996585", "600", "400", "200"),

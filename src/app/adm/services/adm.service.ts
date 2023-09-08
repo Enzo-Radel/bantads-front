@@ -15,4 +15,13 @@ export class AdmService {
     const managers = localStorage[LS_MANAGERS_KEY];
     return managers ? JSON.parse(managers) : [];
   }
+
+  insert(manager: Manager): void {
+
+    const managers = this.listAll();
+
+    managers.push(manager);
+
+    localStorage[LS_MANAGERS_KEY] = JSON.stringify(managers);
+  }
 }
