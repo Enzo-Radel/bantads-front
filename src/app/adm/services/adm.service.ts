@@ -24,4 +24,26 @@ export class AdmService {
 
     localStorage[LS_MANAGERS_KEY] = JSON.stringify(managers);
   }
+
+  searchByName(name: string): Manager | undefined {
+
+    const managers: Manager[] = this.listAll();
+
+    return managers.find(manager => manager.name === name);
+
+  }
+
+  update(manager: Manager): void {
+
+    const managers: Manager[] = this.listAll();
+
+
+    managers.forEach((obj, index, objs) => {
+      if (manager.name === obj.name) {
+        objs[index] = manager;
+      }
+    });
+
+    localStorage[LS_MANAGERS_KEY] = JSON.stringify(managers);
+  }
 }

@@ -18,11 +18,11 @@
             <td>{{manager.positiveBalances}}</td>
             <td>{{manager.negativeBalances}}</td>
             <td class="text-center" style="width: 300px">
-                <a href="#" title="Aprovar" alt="Aprovar" class="btn btn-xs btn-info">
+                <a [routerLink]="['/adm/edit', manager.name]" href="#" title="Aprovar" alt="Aprovar"
+                    class="btn btn-xs btn-info">
                     <i class="fa fa-edit" aria-hidden="true"></i> Editar
                 </a>
-                <a href="#" title="Remover" alt="Remover" class="btn btn-xs btn-danger"
-                    >
+                <a href="#" title="Remover" alt="Remover" class="btn btn-xs btn-danger">
                     <i class="fa fa-times" aria-hidden="true"></i>Remover
                 </a>
             </td>

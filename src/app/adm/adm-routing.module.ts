@@ -4,10 +4,12 @@ import { ManagerListComponent } from './components/manager-list/manager-list.com
 import { InsertManagerComponent } from './components/insert-manager/insert-manager.component';
 
 const routes: Routes = [
-    {path: "adm", children: [
-        {path: "", component: ManagerListComponent},
-        {path: "new", component: InsertManagerComponent}
-    ]}
+    {
+        path: "adm", children: [
+            { path: "", component: ManagerListComponent },
+            { path: "new", component: InsertManagerComponent },
+        ]
+    }
 ];
 
 @NgModule({

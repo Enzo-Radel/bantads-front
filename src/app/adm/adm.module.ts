@@ -10,7 +10,7 @@ import { InsertManagerComponent } from './components/insert-manager/insert-manag
 @NgModule({
   declarations: [
     ManagerListComponent,
-    InsertManagerComponent,
+    InsertManagerComponent
   ],
   imports: [
     CommonModule,
