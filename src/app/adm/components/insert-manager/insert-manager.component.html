@@ -1,0 +1,65 @@
+<h1>Novo Gerente</h1>
+<div class="well">
+
+    <form #formManager="ngForm">
+
+        <div class="form-group">
+            <label for="name">Nome:</label>
+            <input type="text" class="form-control" id="name" name="name" [(ngModel)]="manager.name" #name="ngModel"
+                minlength="2" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="text" class="form-control" id="email" name="email" [(ngModel)]="manager.email"
+                #email="ngModel" minlength="2" required>
+        </div>
+
+        <div class="form-group">
+            <label for="password">Senha:</label>
+            <input type="text" class="form-control" id="password" name="password" [(ngModel)]="manager.password"
+                #password="ngModel" minlength="2" required>
+        </div>
+
+        <div class="form-group">
+            <label for="cpf">CPF:</label>
+            <input type="text" class="form-control" id="cpf" name="cpf" [(ngModel)]="manager.cpf" #cpf="ngModel"
+                minlength="2" required>
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Telefone:</label>
+            <input type="text" class="form-control" id="phone" name="phone" [(ngModel)]="manager.phone"
+                #phone="ngModel" minlength="2" required>
+        </div>
+
+        <div class="form-group">
+            <label for="clientsNumber">Total Clientes:</label>
+            <input type="text" class="form-control" id="clientsNumber" name="clientsNumber"
+                [(ngModel)]="manager.clientsNumber" #clientsNumber="ngModel" minlength="2" required>
+        </div>
+
+        <div class="form-group">
+            <label for="positiveBalances">Saldos Positivos:</label>
+            <input type="text" class="form-control" id="positiveBalances" name="positiveBalances"
+                [(ngModel)]="manager.positiveBalances" #positiveBalances="ngModel" minlength="2" required>
+        </div>
+
+        <div class="form-group">
+            <label for="negativeBalances">Saldos Negativos:</label>
+            <input type="text" class="form-control" id="negativeBalances" name="negativeBalances"
+                [(ngModel)]="manager.negativeBalances" #negativeBalances="ngModel" minlength="2" required>
+        </div>
+
+
+        <div class="form-group">
+            <button type="button" class="btn btn-primary" (click)="insert()" [disabled]="!formManager.form.valid">
+                <i class="fa fa-save" aria-hidden="true"></i> Salvar
+            </button>
+            <a class="btn btn-secondary" [routerLink]="['/adm']">
+                <i class="fa fa-arrow-left" aria-hidden="true"></i> Voltar
+            </a>
+        </div>
+    </form>
+
+</div>
