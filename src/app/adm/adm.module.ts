@@ -6,11 +6,13 @@ import { AdmService } from './services/adm.service';
 import { ManagerListComponent } from './components/manager-list/manager-list.component';
 import { AdmRoutingModule } from './adm-routing.module';
 import { InsertManagerComponent } from './components/insert-manager/insert-manager.component';
+import { EditManagerComponent } from './components/edit-manager/edit-manager.component';
 
 @NgModule({
   declarations: [
     ManagerListComponent,
-    InsertManagerComponent
+    InsertManagerComponent,
+    EditManagerComponent
   ],
   imports: [
     CommonModule,

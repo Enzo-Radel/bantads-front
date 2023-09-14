@@ -46,4 +46,5 @@ export class AdmService {
 
     localStorage[LS_MANAGERS_KEY] = JSON.stringify(managers);
   }
+
 }
